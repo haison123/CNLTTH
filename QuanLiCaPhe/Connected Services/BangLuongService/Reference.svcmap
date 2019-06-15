@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f127da02-ffc6-4220-9d85-df3adaaae186" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51914/BangLuongService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BangLuongService.xsd" MetadataType="Schema" ID="5412beef-be2a-4188-a011-f2177cfc5c55" SourceId="1" SourceUrl="http://localhost:51914/BangLuongService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BangLuongService1.xsd" MetadataType="Schema" ID="c4cba8b3-cd04-4bd1-8111-48f5d00225b1" SourceId="1" SourceUrl="http://localhost:51914/BangLuongService.svc?xsd=xsd0" />
+    <MetadataFile FileName="BangLuongService.wsdl" MetadataType="Wsdl" ID="90ab9a05-2cf0-475e-a84a-11107ad38cc2" SourceId="1" SourceUrl="http://localhost:51914/BangLuongService.svc?wsdl" />
+    <MetadataFile FileName="BangLuongService2.xsd" MetadataType="Schema" ID="33a75516-2419-4b01-975d-e956159c3841" SourceId="1" SourceUrl="http://localhost:51914/BangLuongService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BangLuongService.disco" MetadataType="Disco" ID="145e4151-2e75-460a-ae50-1f6f3261c6b3" SourceId="1" SourceUrl="http://localhost:51914/BangLuongService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

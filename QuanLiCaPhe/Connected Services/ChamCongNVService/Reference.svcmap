@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c1a15fcc-a606-446e-aaed-3834b4780334" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51914/ChamCongNVService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChamCongNVService.disco" MetadataType="Disco" ID="e650dd31-5978-4342-b634-31df0f2d5d91" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?disco" />
+    <MetadataFile FileName="ChamCongNVService.xsd" MetadataType="Schema" ID="2cbf2bd0-4c56-43b7-8c99-335855776513" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ChamCongNVService1.xsd" MetadataType="Schema" ID="9c5aadb5-0b05-4e8a-80fb-cb35380d5522" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ChamCongNVService2.xsd" MetadataType="Schema" ID="aeed5395-de7e-4bed-b3da-61976369557e" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ChamCongNVService3.xsd" MetadataType="Schema" ID="066596a7-c972-43e9-b131-a3f771dc6297" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ChamCongNVService.wsdl" MetadataType="Wsdl" ID="26e1e49e-74f6-45bc-8279-defa5c887b45" SourceId="1" SourceUrl="http://localhost:51914/ChamCongNVService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

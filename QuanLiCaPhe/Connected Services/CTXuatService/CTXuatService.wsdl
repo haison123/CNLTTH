@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CTXuatService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51914/CTXuatService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51914/CTXuatService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51914/CTXuatService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:51914/CTXuatService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DTO_QLCP" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICTXuatService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getDSXuatNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDSXuatNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getDSXuatNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDSXuatNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_DSCTPX_InputMessage">
+    <wsdl:part name="parameters" element="tns:DSCTPX" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_DSCTPX_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DSCTPXResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_Search_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_Search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getMaNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMaNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getMaNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMaNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getTenNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTenNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getTenNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTenNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getDVTNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDVTNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_getDVTNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDVTNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_kiemTraXuatNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraXuatNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_kiemTraXuatNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraXuatNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_kiemTraTonTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraTonTai" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_kiemTraTonTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraTonTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_laySLCon_InputMessage">
+    <wsdl:part name="parameters" element="tns:laySLCon" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_laySLCon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:laySLConResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_ThemCTXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTXuat" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_ThemCTXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_SuaCTXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaCTXuat" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_SuaCTXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaCTXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_XoaCTXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaCTXuat" />
+  </wsdl:message>
+  <wsdl:message name="ICTXuatService_XoaCTXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaCTXuatResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICTXuatService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/DoWork" message="tns:ICTXuatService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/DoWorkResponse" message="tns:ICTXuatService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDSXuatNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/getDSXuatNL" message="tns:ICTXuatService_getDSXuatNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/getDSXuatNLResponse" message="tns:ICTXuatService_getDSXuatNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DSCTPX">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/DSCTPX" message="tns:ICTXuatService_DSCTPX_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/DSCTPXResponse" message="tns:ICTXuatService_DSCTPX_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/Search" message="tns:ICTXuatService_Search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/SearchResponse" message="tns:ICTXuatService_Search_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/getMaNL" message="tns:ICTXuatService_getMaNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/getMaNLResponse" message="tns:ICTXuatService_getMaNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTenNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/getTenNL" message="tns:ICTXuatService_getTenNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/getTenNLResponse" message="tns:ICTXuatService_getTenNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDVTNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/getDVTNL" message="tns:ICTXuatService_getDVTNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/getDVTNLResponse" message="tns:ICTXuatService_getDVTNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraXuatNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/kiemTraXuatNL" message="tns:ICTXuatService_kiemTraXuatNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/kiemTraXuatNLResponse" message="tns:ICTXuatService_kiemTraXuatNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraTonTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/kiemTraTonTai" message="tns:ICTXuatService_kiemTraTonTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/kiemTraTonTaiResponse" message="tns:ICTXuatService_kiemTraTonTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="laySLCon">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/laySLCon" message="tns:ICTXuatService_laySLCon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/laySLConResponse" message="tns:ICTXuatService_laySLCon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/ThemCTXuat" message="tns:ICTXuatService_ThemCTXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/ThemCTXuatResponse" message="tns:ICTXuatService_ThemCTXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaCTXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/SuaCTXuat" message="tns:ICTXuatService_SuaCTXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/SuaCTXuatResponse" message="tns:ICTXuatService_SuaCTXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTXuatService/XoaCTXuat" message="tns:ICTXuatService_XoaCTXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTXuatService/XoaCTXuatResponse" message="tns:ICTXuatService_XoaCTXuat_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICTXuatService" type="tns:ICTXuatService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDSXuatNL">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/getDSXuatNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DSCTPX">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/DSCTPX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaNL">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/getMaNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTenNL">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/getTenNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDVTNL">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/getDVTNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraXuatNL">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/kiemTraXuatNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraTonTai">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/kiemTraTonTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="laySLCon">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/laySLCon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTXuat">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/ThemCTXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaCTXuat">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/SuaCTXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTXuat">
+      <soap:operation soapAction="http://tempuri.org/ICTXuatService/XoaCTXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CTXuatService">
+    <wsdl:port name="BasicHttpBinding_ICTXuatService" binding="tns:BasicHttpBinding_ICTXuatService">
+      <soap:address location="http://localhost:51914/CTXuatService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

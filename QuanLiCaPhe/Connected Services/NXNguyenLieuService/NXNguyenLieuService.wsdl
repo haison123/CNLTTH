@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NXNguyenLieuService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DTO_QLCP" />
+      <xsd:import schemaLocation="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INXNguyenLieuService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_layMaPhieuNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:layMaPhieuNhap" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_layMaPhieuNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:layMaPhieuNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_layMaPhieuXuat_InputMessage">
+    <wsdl:part name="parameters" element="tns:layMaPhieuXuat" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_layMaPhieuXuat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:layMaPhieuXuatResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_NhapNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:NhapNL" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_NhapNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NhapNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XoaNhapNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaNhapNL" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XoaNhapNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaNhapNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XuatNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:XuatNL" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XuatNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XuatNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XoaXuatNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaXuatNL" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_XoaXuatNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaXuatNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_update_tongtien_InputMessage">
+    <wsdl:part name="parameters" element="tns:update_tongtien" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_update_tongtien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:update_tongtienResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_LayDSPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayDSPN" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_LayDSPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayDSPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_Search_PN_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PN" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_Search_PN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PNResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_LayDSPX_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayDSPX" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_LayDSPX_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayDSPXResponse" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_Search_PX_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PX" />
+  </wsdl:message>
+  <wsdl:message name="INXNguyenLieuService_Search_PX_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_PXResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INXNguyenLieuService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/DoWork" message="tns:INXNguyenLieuService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/DoWorkResponse" message="tns:INXNguyenLieuService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="layMaPhieuNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/layMaPhieuNhap" message="tns:INXNguyenLieuService_layMaPhieuNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/layMaPhieuNhapResponse" message="tns:INXNguyenLieuService_layMaPhieuNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="layMaPhieuXuat">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/layMaPhieuXuat" message="tns:INXNguyenLieuService_layMaPhieuXuat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/layMaPhieuXuatResponse" message="tns:INXNguyenLieuService_layMaPhieuXuat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NhapNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/NhapNL" message="tns:INXNguyenLieuService_NhapNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/NhapNLResponse" message="tns:INXNguyenLieuService_NhapNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaNhapNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/XoaNhapNL" message="tns:INXNguyenLieuService_XoaNhapNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/XoaNhapNLResponse" message="tns:INXNguyenLieuService_XoaNhapNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XuatNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/XuatNL" message="tns:INXNguyenLieuService_XuatNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/XuatNLResponse" message="tns:INXNguyenLieuService_XuatNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaXuatNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/XoaXuatNL" message="tns:INXNguyenLieuService_XoaXuatNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/XoaXuatNLResponse" message="tns:INXNguyenLieuService_XoaXuatNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="update_tongtien">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/update_tongtien" message="tns:INXNguyenLieuService_update_tongtien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/update_tongtienResponse" message="tns:INXNguyenLieuService_update_tongtien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LayDSPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/LayDSPN" message="tns:INXNguyenLieuService_LayDSPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/LayDSPNResponse" message="tns:INXNguyenLieuService_LayDSPN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_PN">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/Search_PN" message="tns:INXNguyenLieuService_Search_PN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/Search_PNResponse" message="tns:INXNguyenLieuService_Search_PN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LayDSPX">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/LayDSPX" message="tns:INXNguyenLieuService_LayDSPX_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/LayDSPXResponse" message="tns:INXNguyenLieuService_LayDSPX_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_PX">
+      <wsdl:input wsaw:Action="http://tempuri.org/INXNguyenLieuService/Search_PX" message="tns:INXNguyenLieuService_Search_PX_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INXNguyenLieuService/Search_PXResponse" message="tns:INXNguyenLieuService_Search_PX_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INXNguyenLieuService" type="tns:INXNguyenLieuService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="layMaPhieuNhap">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/layMaPhieuNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="layMaPhieuXuat">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/layMaPhieuXuat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NhapNL">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/NhapNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaNhapNL">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/XoaNhapNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XuatNL">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/XuatNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaXuatNL">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/XoaXuatNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update_tongtien">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/update_tongtien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayDSPN">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/LayDSPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_PN">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/Search_PN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LayDSPX">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/LayDSPX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_PX">
+      <soap:operation soapAction="http://tempuri.org/INXNguyenLieuService/Search_PX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NXNguyenLieuService">
+    <wsdl:port name="BasicHttpBinding_INXNguyenLieuService" binding="tns:BasicHttpBinding_INXNguyenLieuService">
+      <soap:address location="http://localhost:51914/NXNguyenLieuService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
