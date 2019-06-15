@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e2bb575-9522-4887-a036-e2c84aa54de0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51914/NXNguyenLieuService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NXNguyenLieuService1.xsd" MetadataType="Schema" ID="9dce42d9-dadd-4dd9-9d68-ce9cb6182559" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NXNguyenLieuService.xsd" MetadataType="Schema" ID="8879c43d-c7d0-4002-8731-d8b27c28ff08" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NXNguyenLieuService.disco" MetadataType="Disco" ID="15d16d06-4ce4-416d-b6d1-6da7b2e15c0a" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?disco" />
+    <MetadataFile FileName="NXNguyenLieuService3.xsd" MetadataType="Schema" ID="b5081dc6-ad23-4d31-977f-bd099ac833f5" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd3" />
+    <MetadataFile FileName="NXNguyenLieuService2.xsd" MetadataType="Schema" ID="354ee7a4-728f-4607-a71d-fd961e2a3eaf" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NXNguyenLieuService.wsdl" MetadataType="Wsdl" ID="0b1d543f-c75a-40d4-b107-1e7d7c40830c" SourceId="1" SourceUrl="http://localhost:51914/NXNguyenLieuService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

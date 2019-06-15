@@ -1,0 +1,15 @@
+C:\Users\Dell\Desktop\BTL_WCf\DTO_QLCP\bin\Debug\DTO_QLCP.dll
+C:\Users\Dell\Desktop\BTL_WCf\DTO_QLCP\bin\Debug\DTO_QLCP.pdb
+C:\Users\Dell\Desktop\BTL_WCf\DTO_QLCP\obj\Debug\DTO_QLCP.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\BTL_WCf\DTO_QLCP\obj\Debug\DTO_QLCP.dll
+C:\Users\Dell\Desktop\BTL_WCf\DTO_QLCP\obj\Debug\DTO_QLCP.pdb
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\bin\Debug\DTO_QLCP.dll
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\bin\Debug\DTO_QLCP.pdb
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\obj\Debug\DTO_QLCP.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\obj\Debug\DTO_QLCP.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\obj\Debug\DTO_QLCP.dll
+C:\Users\Dell\Desktop\GIT\WCF\DTO_QLCP\obj\Debug\DTO_QLCP.pdb
+C:\Users\My computer\Desktop\WCF-master\WCF-master\DTO_QLCP\bin\Debug\DTO_QLCP.dll
+C:\Users\My computer\Desktop\WCF-master\WCF-master\DTO_QLCP\bin\Debug\DTO_QLCP.pdb
+C:\Users\My computer\Desktop\WCF-master\WCF-master\DTO_QLCP\obj\Debug\DTO_QLCP.dll
+C:\Users\My computer\Desktop\WCF-master\WCF-master\DTO_QLCP\obj\Debug\DTO_QLCP.pdb

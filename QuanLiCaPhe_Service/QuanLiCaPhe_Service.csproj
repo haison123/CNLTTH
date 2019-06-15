@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -61,25 +62,50 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BangLuongService.svc" />
+    <Content Include="ChamCongNVService.svc" />
+    <Content Include="CTNhapService.svc" />
+    <Content Include="CTXuatService.svc" />
     <Content Include="NguyenLieuServices.svc" />
     <Content Include="NhanVienService.svc" />
-    <Content Include="ReportServices.svc" />
+    <Content Include="NXNguyenLieuService.svc" />
+    <Content Include="UserService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangLuongService.svc.cs">
+      <DependentUpon>BangLuongService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ChamCongNVService.svc.cs">
+      <DependentUpon>ChamCongNVService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="CTNhapService.svc.cs">
+      <DependentUpon>CTNhapService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="CTXuatService.svc.cs">
+      <DependentUpon>CTXuatService.svc</DependentUpon>
+    </Compile>
     <Compile Include="DataTrans.cs" />
+    <Compile Include="IBangLuongService.cs" />
+    <Compile Include="IChamCongNVService.cs" />
+    <Compile Include="ICTNhapService.cs" />
+    <Compile Include="ICTXuatService.cs" />
     <Compile Include="INguyenLieuServices.cs" />
     <Compile Include="INhanVienService.cs" />
-    <Compile Include="IReportServices.cs" />
+    <Compile Include="INXNguyenLieuService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="NguyenLieuServices.svc.cs">
       <DependentUpon>NguyenLieuServices.svc</DependentUpon>
     </Compile>
     <Compile Include="NhanVienService.svc.cs">
       <DependentUpon>NhanVienService.svc</DependentUpon>
     </Compile>
+    <Compile Include="NXNguyenLieuService.svc.cs">
+      <DependentUpon>NXNguyenLieuService.svc</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReportServices.svc.cs">
-      <DependentUpon>ReportServices.svc</DependentUpon>
+    <Compile Include="UserService.svc.cs">
+      <DependentUpon>UserService.svc</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +123,10 @@
     <ProjectReference Include="..\DAL_QLCP\DAL_QLCP.csproj">
       <Project>{4a7505ff-77ec-475e-96b6-814aa3cd6f0e}</Project>
       <Name>DAL_QLCP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLCP\DTO_QLCP.csproj">
+      <Project>{d399378c-66a5-4f34-aefa-cd6160722ca1}</Project>
+      <Name>DTO_QLCP</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

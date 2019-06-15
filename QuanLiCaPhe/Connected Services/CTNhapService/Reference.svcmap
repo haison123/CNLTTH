@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bef72ffb-c19a-4307-a593-bf17dbba83ad" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51914/CTNhapService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CTNhapService.disco" MetadataType="Disco" ID="f8df6612-e39a-45cc-a1fe-bba0173475ff" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?disco" />
+    <MetadataFile FileName="CTNhapService.xsd" MetadataType="Schema" ID="c731cd9f-c2f4-4ee2-b7bd-a94b41910e66" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CTNhapService1.xsd" MetadataType="Schema" ID="d0c25891-eec6-4c3c-84d0-f397abfe76df" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CTNhapService2.xsd" MetadataType="Schema" ID="c432febe-e8b7-4091-8ddd-e8afe090d63d" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CTNhapService3.xsd" MetadataType="Schema" ID="314715a7-b348-4767-9b42-0d1e0f78dee5" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CTNhapService.wsdl" MetadataType="Wsdl" ID="f9ab79eb-1729-4d21-b5e0-c2c1a65b9c71" SourceId="1" SourceUrl="http://localhost:51914/CTNhapService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

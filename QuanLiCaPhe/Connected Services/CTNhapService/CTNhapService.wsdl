@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CTNhapService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51914/CTNhapService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51914/CTNhapService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51914/CTNhapService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+      <xsd:import schemaLocation="http://localhost:51914/CTNhapService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DTO_QLCP" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICTNhapService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_Search_DSNhapNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:Search_DSNhapNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_Search_DSNhapNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Search_DSNhapNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_DSCTPN_InputMessage">
+    <wsdl:part name="parameters" element="tns:DSCTPN" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_DSCTPN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DSCTPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_kiemTraNhapNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraNhapNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_kiemTraNhapNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraNhapNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_kiemTraTonTai_InputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraTonTai" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_kiemTraTonTai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraTonTaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getMaNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMaNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getMaNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMaNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getTenNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTenNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getTenNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTenNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getDVTNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDVTNL" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getDVTNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDVTNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getDonGia_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDonGia" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_getDonGia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDonGiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_ThemCTNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTNhap" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_ThemCTNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemCTNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_SuaCTNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaCTNhap" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_SuaCTNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaCTNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_XoaCTNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaCTNhap" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_XoaCTNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaCTNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_search_InputMessage">
+    <wsdl:part name="parameters" element="tns:search" />
+  </wsdl:message>
+  <wsdl:message name="ICTNhapService_search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICTNhapService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/DoWork" message="tns:ICTNhapService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/DoWorkResponse" message="tns:ICTNhapService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Search_DSNhapNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/Search_DSNhapNL" message="tns:ICTNhapService_Search_DSNhapNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/Search_DSNhapNLResponse" message="tns:ICTNhapService_Search_DSNhapNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DSCTPN">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/DSCTPN" message="tns:ICTNhapService_DSCTPN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/DSCTPNResponse" message="tns:ICTNhapService_DSCTPN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraNhapNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/kiemTraNhapNL" message="tns:ICTNhapService_kiemTraNhapNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/kiemTraNhapNLResponse" message="tns:ICTNhapService_kiemTraNhapNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraTonTai">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/kiemTraTonTai" message="tns:ICTNhapService_kiemTraTonTai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/kiemTraTonTaiResponse" message="tns:ICTNhapService_kiemTraTonTai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/getMaNL" message="tns:ICTNhapService_getMaNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/getMaNLResponse" message="tns:ICTNhapService_getMaNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTenNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/getTenNL" message="tns:ICTNhapService_getTenNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/getTenNLResponse" message="tns:ICTNhapService_getTenNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDVTNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/getDVTNL" message="tns:ICTNhapService_getDVTNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/getDVTNLResponse" message="tns:ICTNhapService_getDVTNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDonGia">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/getDonGia" message="tns:ICTNhapService_getDonGia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/getDonGiaResponse" message="tns:ICTNhapService_getDonGia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/ThemCTNhap" message="tns:ICTNhapService_ThemCTNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/ThemCTNhapResponse" message="tns:ICTNhapService_ThemCTNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaCTNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/SuaCTNhap" message="tns:ICTNhapService_SuaCTNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/SuaCTNhapResponse" message="tns:ICTNhapService_SuaCTNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/XoaCTNhap" message="tns:ICTNhapService_XoaCTNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/XoaCTNhapResponse" message="tns:ICTNhapService_XoaCTNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="search">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICTNhapService/search" message="tns:ICTNhapService_search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICTNhapService/searchResponse" message="tns:ICTNhapService_search_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICTNhapService" type="tns:ICTNhapService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Search_DSNhapNL">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/Search_DSNhapNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DSCTPN">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/DSCTPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraNhapNL">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/kiemTraNhapNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraTonTai">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/kiemTraTonTai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaNL">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/getMaNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTenNL">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/getTenNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDVTNL">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/getDVTNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDonGia">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/getDonGia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemCTNhap">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/ThemCTNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaCTNhap">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/SuaCTNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaCTNhap">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/XoaCTNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="search">
+      <soap:operation soapAction="http://tempuri.org/ICTNhapService/search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CTNhapService">
+    <wsdl:port name="BasicHttpBinding_ICTNhapService" binding="tns:BasicHttpBinding_ICTNhapService">
+      <soap:address location="http://localhost:51914/CTNhapService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

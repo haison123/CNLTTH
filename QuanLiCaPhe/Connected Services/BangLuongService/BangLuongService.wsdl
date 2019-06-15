@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BangLuongService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51914/BangLuongService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51914/BangLuongService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51914/BangLuongService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DTO_QLCP" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IBangLuongService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_layChucVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:layChucVu" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_layChucVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:layChucVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_layGioLam_InputMessage">
+    <wsdl:part name="parameters" element="tns:layGioLam" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_layGioLam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:layGioLamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_kiemTraBangLuong_InputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraBangLuong" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_kiemTraBangLuong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kiemTraBangLuongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_ThemBangLuong_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemBangLuong" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_ThemBangLuong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemBangLuongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_SuaBangLuong_InputMessage">
+    <wsdl:part name="parameters" element="tns:SuaBangLuong" />
+  </wsdl:message>
+  <wsdl:message name="IBangLuongService_SuaBangLuong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SuaBangLuongResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IBangLuongService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/DoWork" message="tns:IBangLuongService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/DoWorkResponse" message="tns:IBangLuongService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="layChucVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/layChucVu" message="tns:IBangLuongService_layChucVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/layChucVuResponse" message="tns:IBangLuongService_layChucVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="layGioLam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/layGioLam" message="tns:IBangLuongService_layGioLam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/layGioLamResponse" message="tns:IBangLuongService_layGioLam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraBangLuong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/kiemTraBangLuong" message="tns:IBangLuongService_kiemTraBangLuong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/kiemTraBangLuongResponse" message="tns:IBangLuongService_kiemTraBangLuong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemBangLuong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/ThemBangLuong" message="tns:IBangLuongService_ThemBangLuong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/ThemBangLuongResponse" message="tns:IBangLuongService_ThemBangLuong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SuaBangLuong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBangLuongService/SuaBangLuong" message="tns:IBangLuongService_SuaBangLuong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBangLuongService/SuaBangLuongResponse" message="tns:IBangLuongService_SuaBangLuong_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IBangLuongService" type="tns:IBangLuongService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="layChucVu">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/layChucVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="layGioLam">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/layGioLam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="kiemTraBangLuong">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/kiemTraBangLuong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemBangLuong">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/ThemBangLuong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuaBangLuong">
+      <soap:operation soapAction="http://tempuri.org/IBangLuongService/SuaBangLuong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BangLuongService">
+    <wsdl:port name="BasicHttpBinding_IBangLuongService" binding="tns:BasicHttpBinding_IBangLuongService">
+      <soap:address location="http://localhost:51914/BangLuongService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
