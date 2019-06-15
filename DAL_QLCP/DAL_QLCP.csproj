@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A7505FF-77EC-475E-96B6-814AA3CD6F0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL_QLCP</RootNamespace>
+    <AssemblyName>DAL_QLCP</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL_NguyenLieu.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
+    <Compile Include="DAL_report.cs" />
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="DSBangLuong.cs">
+      <DependentUpon>DSBangLuong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSBangLuong.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBangLuong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSBanSDNhieu.Designer.cs">
+      <DependentUpon>DSBanSDNhieu.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DSCTBanHang.Designer.cs">
+      <DependentUpon>DSCTBanHang.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DSDoanhThu.Designer.cs">
+      <DependentUpon>DSDoanhThu.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DSHoaDon.Designer.cs">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DSBangLuong.xsc">
+      <DependentUpon>DSBangLuong.xsd</DependentUpon>
+    </None>
+    <None Include="DSBangLuong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBangLuong.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSBangLuong.xss">
+      <DependentUpon>DSBangLuong.xsd</DependentUpon>
+    </None>
+    <None Include="DSBanSDNhieu.xsc">
+      <DependentUpon>DSBanSDNhieu.xsd</DependentUpon>
+    </None>
+    <None Include="DSBanSDNhieu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBanSDNhieu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSBanSDNhieu.xss">
+      <DependentUpon>DSBanSDNhieu.xsd</DependentUpon>
+    </None>
+    <None Include="DSCTBanHang.xsc">
+      <DependentUpon>DSCTBanHang.xsd</DependentUpon>
+    </None>
+    <None Include="DSCTBanHang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCTBanHang.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSCTBanHang.xss">
+      <DependentUpon>DSCTBanHang.xsd</DependentUpon>
+    </None>
+    <None Include="DSDoanhThu.xsc">
+      <DependentUpon>DSDoanhThu.xsd</DependentUpon>
+    </None>
+    <None Include="DSDoanhThu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDoanhThu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSDoanhThu.xss">
+      <DependentUpon>DSDoanhThu.xsd</DependentUpon>
+    </None>
+    <None Include="DSHoaDon.xsc">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="DSHoaDon.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHoaDon.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSHoaDon.xss">
+      <DependentUpon>DSHoaDon.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
