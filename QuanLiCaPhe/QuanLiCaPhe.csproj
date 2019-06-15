@@ -98,6 +98,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Connected Services\UserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachCTPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachCTPX.Designer.cs">
+      <DependentUpon>frmDanhSachCTPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachPX.Designer.cs">
+      <DependentUpon>frmDanhSachPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDSCTPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSCTPhieuNhap.Designer.cs">
+      <DependentUpon>frmDSCTPhieuNhap.cs</DependentUpon>
+    </Compile>
+>>>>>>> Stashed changes
     <Compile Include="frmBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,12 +160,6 @@
     <Compile Include="frmQuanLiNV.Designer.cs">
       <DependentUpon>frmQuanLiNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmReportHD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmReportHD.Designer.cs">
-      <DependentUpon>frmReportHD.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmReport_BanSDNhieu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,12 +183,6 @@
     </Compile>
     <Compile Include="frmReport_DT.Designer.cs">
       <DependentUpon>frmReport_DT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSoDoChinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSoDoChinh.Designer.cs">
-      <DependentUpon>frmSoDoChinh.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -196,10 +210,6 @@
       <DependentUpon>frmQuanLiNV.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmReportHD.resx">
-      <DependentUpon>frmReportHD.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmReport_BanSDNhieu.resx">
       <DependentUpon>frmReport_BanSDNhieu.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -214,10 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmReport_DT.resx">
       <DependentUpon>frmReport_DT.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSoDoChinh.resx">
-      <DependentUpon>frmSoDoChinh.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -241,10 +247,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Report_DT.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report_HD.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Report_HD.cs</LastGenOutput>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -253,6 +255,7 @@
     <None Include="app.config" />
     <None Include="Connected Services\NguyenLieuService\NguyenLieuServices.wsdl" />
     <None Include="Connected Services\NhanVienService\NhanVienService.wsdl" />
+<<<<<<< Updated upstream
     <None Include="Connected Services\ReportService\QuanLiCaPhe.ReportService.DSBangLuong.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -284,6 +287,31 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ReportService\ReportServices.wsdl" />
+=======
+    <None Include="Connected Services\NXNguyenLieuService\NXNguyenLieuService.wsdl" />
+    <None Include="Connected Services\NXNguyenLieuService\NXNguyenLieuService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NXNguyenLieuService\NXNguyenLieuService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NXNguyenLieuService\NXNguyenLieuService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NXNguyenLieuService\NXNguyenLieuService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UserService\UserService.wsdl" />
+    <None Include="Connected Services\UserService\UserService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UserService\UserService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\UserService\UserService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+>>>>>>> Stashed changes
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -316,12 +344,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Report_DT.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Report_HD.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Report_HD.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
